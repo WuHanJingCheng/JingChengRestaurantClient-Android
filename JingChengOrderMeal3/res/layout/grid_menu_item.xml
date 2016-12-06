@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:id="@+id/grid_item"
+	    android:layout_width="@dimen/x446"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/grid_dish_bg">
+	    <ImageView 
+	        android:id="@+id/grid_iv"
+	        android:layout_width="@dimen/x406"
+	        android:layout_height="@dimen/x406"
+	        android:layout_marginLeft="@dimen/x20"
+	        android:layout_marginTop="@dimen/x20"
+	        android:layout_marginRight="@dimen/x20"
+	        android:src="@drawable/img_1"
+	        android:scaleType="fitXY"/>
+	    <TextView 
+	        android:id="@+id/grid_new"
+	        android:layout_width="@dimen/x96"
+	        android:layout_height="@dimen/x42"
+	        android:text="新品"
+	        android:visibility="visible"
+	        android:gravity="center"
+	        android:layout_alignLeft="@+id/grid_iv"
+	        android:layout_alignBottom="@+id/grid_iv"
+	        android:layout_marginLeft="@dimen/x42"
+	        android:layout_marginTop="@dimen/x10"
+	        android:background="@drawable/grid_new_bg"/>
+	    
+	    <TextView 
+	        android:id="@+id/grid_dishName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/grid_iv"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:layout_marginTop="@dimen/x30"
+	        android:textColor="@color/textcolor2"
+	        android:textSize="@dimen/s36"
+	        android:text="dishName"/>
+	    
+	    <TextView
+	        android:id="@+id/grid_price" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/grid_dishName"
+	        android:layout_marginTop="@dimen/x20"
+	        android:layout_centerHorizontal="true"
+	        android:text="88元"
+	        android:textColor="@color/textcolor4"
+	        android:textSize="@dimen/s36"/>
+	    
+	    <Button
+	        android:id="@+id/grid_join"
+	        android:layout_width="@dimen/x144"
+	        android:layout_height="@dimen/x48"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/grid_price"
+	        android:layout_marginTop="@dimen/x17" 
+	        android:background="@drawable/join_select"
+	        android:text="加入"
+	        android:textColor="@color/textcolor8"
+	        android:textSize="@dimen/s32"
+	        android:gravity="center"
+	        android:visibility="visible"
+	        android:layout_marginBottom="@dimen/x20"/>
+	    <RelativeLayout 
+	        android:id="@+id/grid_select"
+	        android:layout_below="@+id/grid_price"
+	        android:layout_marginTop="@dimen/x17"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="@dimen/x20"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/x48"
+	        android:visibility="gone">
+	        <Button
+	            android:id="@+id/grid_cancel"
+	            android:layout_width="@dimen/x50"
+	            android:layout_height="@dimen/x50"
+	            android:layout_alignParentLeft="true"
+	            android:background="@drawable/cancel"/>
+
+	        <TextView
+	            android:id="@+id/grid_number"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/grid_cancel"
+	            android:layout_toRightOf="@+id/grid_cancel"
+	            android:layout_marginLeft="@dimen/x35"
+	            android:gravity="center"
+	            android:textSize="@dimen/s36"
+	            android:textColor="#333333"
+	            android:text="1"/>
+	
+	        <Button
+	            android:id="@+id/grid_add"
+	            android:layout_width="@dimen/x50"
+	            android:layout_height="@dimen/x50"
+	            android:layout_alignBottom="@+id/grid_number"
+	            android:layout_toRightOf="@+id/grid_number"
+	            android:layout_marginLeft="@dimen/x35"
+	            android:background="@drawable/add_bt_select" />
+	    </RelativeLayout>
+	    
+	</RelativeLayout>
+</RelativeLayout>

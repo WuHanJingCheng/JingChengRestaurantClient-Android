@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    tools:context="com.jingcheng.jingchengdininghall.LoginActivity" >
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/login_info_bg">
+		
+		<EditText 
+		    android:id="@+id/et_username"
+	        android:layout_width="@dimen/x720"
+	        android:layout_height="@dimen/x100"
+	        android:textColorHint="@color/textcolor1"
+	        android:layout_below="@+id/logo"
+	        android:layout_marginTop="@dimen/x100"
+	        android:layout_centerHorizontal="true"
+	        android:drawableLeft="@drawable/login_username"
+	        android:drawablePadding="@dimen/x30"
+	        android:textColor="@color/textcolor2"
+	        android:hint="手机号/名称"
+	        android:background="@drawable/login_edit_bg"
+	        android:textSize="@dimen/s36"/>
+		<EditText 
+		    android:id="@+id/et_password"
+	        android:layout_width="@dimen/x720"
+	        android:layout_height="@dimen/x100"
+	        android:textColorHint="@color/textcolor1"
+	        android:layout_below="@+id/et_username"
+	        android:layout_marginTop="@dimen/x30"
+	        android:drawablePadding="@dimen/x30"
+	        android:layout_centerHorizontal="true"
+	        android:drawableLeft="@drawable/login_password"
+	        android:hint="请输入密码"
+	        android:textColor="@color/textcolor2"
+	        android:background="@drawable/login_edit_bg"
+	        android:textSize="@dimen/s36"/>
+		
+		<Button
+		    android:id="@+id/bt_login" 
+		    android:layout_width="@dimen/x720"
+		    android:layout_height="@dimen/x100"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@+id/et_password"
+		    android:layout_marginTop="@dimen/x60"
+		    android:text="登录"
+		    android:gravity="center"
+		    android:textColor="#1a1a1a"
+		    android:textSize="@dimen/s36"
+		    android:background="@drawable/login_bt_login"/>
+
+		
+	</RelativeLayout>
+</RelativeLayout>

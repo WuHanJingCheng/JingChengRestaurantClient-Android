@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x1500"
+    android:layout_height="@dimen/x1500">
+    
+    <RelativeLayout
+        android:id="@+id/details_bg"
+        android:layout_width="@dimen/x1430"
+        android:layout_height="@dimen/x1408"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x40"
+        android:layout_centerVertical="true"
+        android:background="@drawable/details_bg">
+	    <ImageView 
+	        android:id="@+id/details_iv"
+	        android:layout_width="@dimen/x1390"
+	        android:layout_height="@dimen/x1043"
+	        android:layout_centerHorizontal="true"
+	        android:layout_margin="@dimen/x20"
+	        android:scaleType="fitXY"/>
+		<TextView 
+		    android:id="@+id/details_name"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="DishName"
+		    android:textSize="@dimen/s60"
+		    android:textColor="#774040"
+		    android:layout_below="@+id/details_iv"
+		    android:layout_marginTop="@dimen/x30"
+		    android:layout_marginLeft="@dimen/x50"/> 
+		    
+		<TextView 
+		    android:id="@+id/details_price"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="￥88"
+		    android:textSize="@dimen/s52"
+		    android:textStyle="bold"
+		    android:textColor="#774040"
+		    android:layout_alignBottom="@+id/details_name"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="@dimen/x300"/> 
+	    
+	    
+	    <Button 
+             android:id="@+id/bt_addshop"
+             android:layout_width="@dimen/x168"
+             android:layout_height="@dimen/x56"
+             android:background="@drawable/list_menu_bt_bg"
+	         android:layout_alignBottom="@+id/details_name"
+             android:textSize="@dimen/s36"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="@dimen/x40"
+             android:textColor="#794b0a"
+             android:text="来一份"
+             android:visibility="visible"/>
+	         
+        <Button
+            android:id="@+id/bt_cancel_details"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/cancle_bt_select"
+            android:layout_toLeftOf="@+id/tv_number_details"
+            android:layout_alignBottom="@+id/tv_number_details"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_number_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/bt_add_details"
+            android:layout_alignBottom="@+id/bt_add_details"
+            android:layout_marginRight="@dimen/x20"
+            android:gravity="center"
+            android:textSize="@dimen/s40"
+            android:textColor="#333333"
+            android:text="1"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/bt_add_details"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_alignBottom="@+id/details_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x40"
+            android:background="@drawable/add_bt_select" 
+            android:visibility="gone"/>
+	    
+        
+        <TextView 
+            android:id="@+id/details_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/x950"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_below="@+id/details_name"
+            android:layout_marginTop="@dimen/x55"
+            android:textColor="#333333"
+            android:textSize="@dimen/s32"
+            android:text="详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情"/>
+	 </RelativeLayout>
+	<Button 
+        android:id="@+id/details_finish"
+        android:layout_width="@dimen/x75"
+        android:layout_height="@dimen/x75"
+        android:layout_alignTop="@+id/details_bg"
+        android:layout_marginTop="-15dp"
+        android:layout_alignRight="@+id/details_bg"
+        android:layout_marginRight="-15dp"
+        android:background="@drawable/details_finish"/>
+	 
+</RelativeLayout>

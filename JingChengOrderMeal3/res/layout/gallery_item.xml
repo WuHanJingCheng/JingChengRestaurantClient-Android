@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:id="@+id/gallery_rl"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/gallery_item"
+	    android:padding="@dimen/x10"
+	    android:layout_marginLeft="@dimen/x20">
+	    <ImageView 
+	        android:id="@+id/gallery_iv"
+	        android:layout_marginLeft="@dimen/x13"
+	        android:layout_width="@dimen/x56"
+	        android:layout_height="@dimen/x56"
+	        android:layout_centerVertical="true"/>
+	    <TextView 
+	        android:id="@+id/gallery_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/s32"
+	        android:layout_toRightOf="@+id/gallery_iv"
+	        android:layout_centerVertical="true"
+	        android:layout_alignBottom="@+id/gallery_iv"
+	        android:layout_marginLeft="@dimen/x10"
+	        android:layout_marginRight="@dimen/x20"
+	        android:textColor="@color/textcolor7"
+	        android:text="肉类"/>
+	</RelativeLayout>
+</RelativeLayout>
