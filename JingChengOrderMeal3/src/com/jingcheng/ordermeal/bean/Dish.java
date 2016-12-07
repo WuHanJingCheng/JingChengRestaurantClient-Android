@@ -24,7 +24,7 @@ public class Dish implements Serializable{
 	 * @param boolean isHot  «∑Ò»»œ˙
 	 */
 	public Dish(int dishId, String dishName, String details, float price,
-			int image, int count, boolean isNew, boolean isHot) {
+			int image, boolean isNew, boolean isHot) {
 		super();
 		this.dishId = dishId;
 		this.dishName = dishName;
