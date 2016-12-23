@@ -7,7 +7,8 @@
     <RelativeLayout 
         android:id="@+id/bar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/x90">
+        android:layout_height="@dimen/x90"
+        android:background="#401418">
         <ImageView 
             android:id="@+id/bar_logo"
             android:layout_width="@dimen/x68"
@@ -23,6 +24,7 @@
             android:layout_toRightOf="@+id/bar_logo"
             android:layout_marginLeft="@dimen/x20"
             android:layout_centerVertical="true"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:text="阿芈烤肉"/>
         <TextView 
@@ -30,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="当前页面"
-            android:textColor="@color/textcolor5"
+            android:textColor="@color/white"
             android:textSize="@dimen/s40"
             android:layout_centerInParent="true"/>
     </RelativeLayout>
@@ -38,13 +40,14 @@
         android:id="@+id/sidebar"
         android:layout_width="@dimen/x162"
         android:layout_height="match_parent"
-        android:background="#e9cb8f"
+        android:background="@drawable/menu_left_bg"
         android:layout_below="@+id/bar">
         <RelativeLayout 
             android:id="@+id/hot"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/x351">
+            android:layout_height="@dimen/x160"
+            android:layout_marginTop="@dimen/x351"
+            android:background="@drawable/menu_left_bg">
             <ImageView 
                 android:id="@+id/hot_iv"
                 android:layout_width="@dimen/x67"
@@ -61,20 +64,13 @@
                 android:layout_marginTop="@dimen/x15"
                 android:layout_centerHorizontal="true"
                 android:text="推荐"/>
-            <View 
-                android:id="@+id/hot_view"
-                android:layout_width="@dimen/x18"
-                android:layout_height="@dimen/x32"
-                android:background="@drawable/sidebar_select"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:visibility="gone"/>
         </RelativeLayout>
         <RelativeLayout 
             android:id="@+id/menu"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/x160"
             android:layout_below="@+id/hot"
+            android:background="@drawable/menu_left_bg"
             android:layout_marginTop="@dimen/x132">
             <ImageView 
                 android:id="@+id/menu_iv"
@@ -92,21 +88,14 @@
                 android:layout_marginTop="@dimen/x15"
                 android:layout_centerHorizontal="true"
                 android:text="菜谱"/>
-            <View 
-                android:id="@+id/menu_view"
-                android:layout_width="@dimen/x18"
-                android:layout_height="@dimen/x32"
-                android:background="@drawable/sidebar_select"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:visibility="gone"/>
         </RelativeLayout>
         <RelativeLayout 
             android:id="@+id/shop"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/x160"
             android:layout_below="@+id/menu"
-            android:layout_marginTop="@dimen/x132">
+            android:layout_marginTop="@dimen/x132"
+            android:background="@drawable/menu_left_bg">
             <ImageView 
                 android:id="@+id/shop_iv"
                 android:layout_width="@dimen/x67"
@@ -115,8 +104,8 @@
                 android:layout_centerHorizontal="true"/>
             <TextView 
                 android:id="@+id/count"
-                android:layout_width="@dimen/x36"
-                android:layout_height="@dimen/x36"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40"
                 android:background="@drawable/count"
                 android:layout_alignTop="@+id/shop_iv"
                 android:layout_alignRight="@+id/shop_iv"
@@ -136,14 +125,6 @@
                 android:layout_marginTop="@dimen/x15"
                 android:layout_centerHorizontal="true"
                 android:text="购物车"/>
-            <View 
-                android:id="@+id/shop_view"
-                android:layout_width="@dimen/x18"
-                android:layout_height="@dimen/x32"
-                android:background="@drawable/sidebar_select"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:visibility="gone"/>
         </RelativeLayout>
         
         

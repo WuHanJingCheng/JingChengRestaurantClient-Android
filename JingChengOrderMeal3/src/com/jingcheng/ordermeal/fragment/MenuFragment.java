@@ -76,6 +76,14 @@ public class MenuFragment extends BaseFragment {
 		list_subMenu.add(new SubMenu(R.drawable.icon_haixian, "鱼类"));
 		list_subMenu.add(new SubMenu(R.drawable.icon_shucai, "蔬菜"));
 		list_subMenu.add(new SubMenu(R.drawable.icon_zhushi, "主食"));
+		list_subMenu.add(new SubMenu(R.drawable.icon_zhushi, "海鲜类"));
+		list_subMenu.add(new SubMenu(R.drawable.icon_zhushi, "海鲜类海鲜"));
+		list_subMenu.add(new SubMenu(R.drawable.icon_zhushi, "主食"));
+		list_subMenu.add(new SubMenu(R.drawable.icon_zhushi, "海鲜类"));
+		list_subMenu.add(new SubMenu(R.drawable.icon_zhushi, "海鲜类海鲜"));
+		list_subMenu.add(new SubMenu(R.drawable.icon_zhushi, "主食"));
+		list_subMenu.add(new SubMenu(R.drawable.icon_zhushi, "海鲜类"));
+		list_subMenu.add(new SubMenu(R.drawable.icon_zhushi, "海鲜类海鲜"));
 		
 		//dish数据
 		list_dish1 = new ArrayList<Dish>();
@@ -337,4 +345,6 @@ public class MenuFragment extends BaseFragment {
 		context.unregisterReceiver(broadcastReceiver);
 		super.onDestroyView();
 	}
+	
+	
 }

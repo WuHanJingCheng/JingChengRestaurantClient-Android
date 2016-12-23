@@ -10,7 +10,7 @@
 	    android:layout_height="wrap_content"
 	    android:background="@drawable/gallery_item"
 	    android:padding="@dimen/x10"
-	    android:layout_marginLeft="@dimen/x20">
+	    android:layout_marginLeft="@dimen/x40">
 	    <ImageView 
 	        android:id="@+id/gallery_iv"
 	        android:layout_marginLeft="@dimen/x13"

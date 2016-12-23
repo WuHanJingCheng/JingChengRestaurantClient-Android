@@ -66,7 +66,7 @@ public class TableActivity extends BaseActivity implements OnClickListener {
 				}
 				editor.putString("tableId", table).commit();
 				et_tableId.setText("");
-				startActivity(new Intent(this,MainActivity.class));
+				startActivityForResult(new Intent(this,MainActivity.class), 0);
 //				finish();
 			}else if(table == null||table == ""){
 				Toast.makeText(this, "«Î ‰»Î◊¿∫≈", 0).show();
@@ -79,6 +79,14 @@ public class TableActivity extends BaseActivity implements OnClickListener {
 
 		default:
 			break;
+		}
+	}
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
+		if(resultCode == 10000){
+			finish();
 		}
 	}
 }

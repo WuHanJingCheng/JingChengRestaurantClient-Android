@@ -37,8 +37,8 @@
 		    android:layout_marginLeft="@dimen/x20"/>
 		<Button
             android:id="@+id/bt_cancel_shop"
-            android:layout_width="@dimen/x60"
-            android:layout_height="@dimen/x60"
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/x48"
             android:background="@drawable/cancle_bt_select"
             android:layout_toRightOf="@+id/tv_dishName_shop"
             android:layout_centerVertical="true"
@@ -58,8 +58,8 @@
 
         <Button
             android:id="@+id/bt_add_shop"
-            android:layout_width="@dimen/x60"
-            android:layout_height="@dimen/x60"
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/x48"
             android:background="@drawable/add_bt_select" 
             android:layout_toRightOf="@+id/tv_number_shop"
             android:layout_marginLeft="@dimen/x25"

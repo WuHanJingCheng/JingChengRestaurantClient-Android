@@ -10,6 +10,7 @@
   	<color name="textcolor7">#343434</color> 
   	<color name="textcolor8">#fffefe</color> 
   	<color name="textcolor9">#e98503</color> 
+  	<color name="textcolor10">#eb5e5e</color> 
   	
   	<color name="barcolor">#FFC05E</color> 
   	
@@ -18,6 +19,7 @@
   	<color name="bg2">#F2F2F2</color> 
   	<color name="bg3">#00000000</color> 
   	<color name="bg4">#f5ebd5</color> 
+  	<color name="bg5">#EAE0C5</color> 
   	
   	<color name="line1">#B2AFAF</color> 
   	

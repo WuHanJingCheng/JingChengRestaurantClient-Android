@@ -49,7 +49,7 @@
 		</RelativeLayout>
 		<Button 
 		    android:id="@+id/bt_enter"
-		    android:layout_width="@dimen/x120"
+		    android:layout_width="@dimen/x200"
 		    android:layout_height="@dimen/x64"
 		    android:background="@drawable/table_bt_enter"
 		    android:layout_alignParentBottom="true"

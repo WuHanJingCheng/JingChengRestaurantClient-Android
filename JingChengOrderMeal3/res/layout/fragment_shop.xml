@@ -43,8 +43,8 @@
         
         <Button 
             android:id="@+id/shop_null_again"
-            android:layout_width="@dimen/x161"
-            android:layout_height="@dimen/x59"
+            android:layout_width="@dimen/x220"
+            android:layout_height="@dimen/x72"
             android:background="@drawable/again_select"
             android:layout_below="@+id/shop_null_tv2"
             android:layout_alignLeft="@+id/shop_null_tv2"
@@ -54,11 +54,12 @@
         
         <Button 
             android:id="@+id/shop_null_begin"
-            android:layout_width="@dimen/x126"
-            android:layout_height="@dimen/x59"
+            android:layout_width="@dimen/x220"
+            android:layout_height="@dimen/x72"
             android:layout_toRightOf="@+id/shop_null_again"
             android:layout_alignBottom="@+id/shop_null_again"
             android:layout_marginLeft="@dimen/x80"
+            android:textColor="@color/textcolor10"
             android:background="@drawable/begin_select"
             android:text="点餐"/>
     </RelativeLayout>
@@ -89,8 +90,8 @@
         
         <Button
             android:id="@+id/shop_allDelete" 
-            android:layout_width="@dimen/x156"
-            android:layout_height="@dimen/x52"
+            android:layout_width="@dimen/x220"
+            android:layout_height="@dimen/x72"
             android:background="@drawable/all_delete_select"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/x40"
@@ -233,8 +234,8 @@
        	     android:textSize="@dimen/s42"/>
     	<Button 
 	         android:id="@+id/shop_commit"
-	         android:layout_width="@dimen/x200"
-	         android:layout_height="@dimen/x68"
+	         android:layout_width="@dimen/x220"
+	         android:layout_height="@dimen/x72"
 	         android:layout_alignParentRight="true"
 	         android:layout_marginRight="@dimen/x260"
 	         android:layout_below="@+id/shop_tv2"
@@ -246,15 +247,15 @@
 	         android:background="@drawable/commit_select"/>
 	     <Button 
 	         android:id="@+id/shop_again"
-	         android:layout_width="@dimen/x200"
-	         android:layout_height="@dimen/x68"
+	         android:layout_width="@dimen/x220"
+	         android:layout_height="@dimen/x72"
 	         android:background="@drawable/begin_select"
 	         android:layout_toLeftOf="@+id/shop_commit"
 	         android:layout_alignBottom="@+id/shop_commit"
 	         android:layout_marginRight="@dimen/x130"
 	         android:gravity="center"
 	         android:textSize="@dimen/s32"
-	         android:textColor="@color/textcolor2"
+	         android:textColor="@color/textcolor10"
 	         android:text="重新开桌"/>
        	 
     </RelativeLayout>
